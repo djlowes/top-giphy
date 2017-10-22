@@ -12,33 +12,22 @@
     <title>Get top Gifs</title>
   </head>
   <body>
+<!--Top-->
     <div id="top-container">
-      <button type="button" class="myButton">Large button</button>
-      <button type="button" class="myButton">Large button</button>
-      <button type="button" class="myButton">Large button</button>
-      <button type="button" class="myButton">Large button</button>
-      <button type="button" class="myButton">Large button</button>
-      <button type="button" class="myButton">Large button</button>
-      <button type="button" class="myButton">Large button</button>
-      <button type="button" class="myButton">Large button</button>
-      <button type="button" class="myButton">Large button</button>
-      <button type="button" class="myButton">Large button</button>
-      <button type="button" class="myButton">Large button</button>
-      <button type="button" class="myButton">Large button</button>
-      <button type="button" class="myButton">Large button</button>
-
-
-
     </div>
     <div id="wrapper">
-      <div id="left-container">test</div>
+<!--Left-->
+      <div id="left-container"></div>
+<!--Right-->
       <div id="right-container">
         <div class="form-group">
-          <label>Add an actor/actress</label>
-          <input class="form-control" id="exampleInputEmail1" placeholder="John Travolta">
+          <form>
+          <label for="actor-input">Add to the list!</label>
+          <input type="text" id="actor-input" class="form-control" placeholder="Robert De Niro" value="Please add another actor/actress">
           <small class="form-text text-muted">After you press submit, a button will be created above.</small>
+          </form>
         </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button class="btn btn-primary" id="add-gif">Submit</button>
       </div>
     </div>
 
