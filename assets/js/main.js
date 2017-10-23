@@ -30,18 +30,21 @@ var gifList = response.data;
     gifDisplay.append(giffy);
     }
 
-$(".myGiffy").on("click", function() {
-  if (giffyState === "animate") {
-    $(this).attr("src", $(this).attr("data-still"));
-    $(this).attr("data-state", "still");
-  }
-  if (giffyState === "still") {
-    $(this).attr("src", $(this).attr("data-animate"));
-    $(this).attr("data-state", "animate");
-       }
-    console.log(this)
-     });
-  });
+  $(".myGiffy").on("click", function() {
+    if (giffyState === "animate") {
+      $(this).attr("src", $(this).attr("data-still"));
+      $(this).attr("data-state", "still");
+      giffyState = "still";
+      return;
+    }
+    if (giffyState === "still") {
+      $(this).attr("src", $(this).attr("data-animate"));
+      $(this).attr("data-state", "animate");
+      giffyState = "animate";
+      return;
+    }
+});
+});
 }
 
 function renderButtons() {
